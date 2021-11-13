@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  automation_backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: 'python main.py'
+    volumes:
+      - .:/app
